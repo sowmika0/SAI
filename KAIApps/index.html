@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAI Apps</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<div class="content">
+  <h1 class="content__heading" style="color:#ffffff;text-shadow:-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">Welcome To KAI Web Apps</h1>
+  <p class="content__heading" style="color:#ffffff;text-shadow:-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">For Earth For Life</p>
+  <a href="http://172.20.92.12:8082" target="_blank" class="content__cta" style="color:#ffffff;">HRM</a>
+  <a href="http://172.20.92.12:8085" target="_blank" class="content__cta" style="color:#ffffff;">AMS</a>
+  <a href="http://172.20.92.4:8086" target="_blank" class="content__cta" style="color:#ffffff;">LMS</a>
+</div><!-- /content -->
+
+<video id="my-video" class="video" muted loop>
+  <source src="media/MU4501.mp4" type="video/mp4">
+  <source src="media/MU4501.ogv" type="video/ogg">
+  <source src="media/MU4501.webm" type="video/webm">
+  
+</video><!-- /video -->
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+</body>
+</html>
